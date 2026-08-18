@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4A0F1E9-9E50-4D96-80B7-6F20B375ACBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasaB2BExtractor</RootNamespace>
+    <AssemblyName>MasaB2BExtractor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>MasaB2BExtractor.ico</ApplicationIcon>
+    <StartupObject>MasaLeadsExtractor.Startup</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>lib\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Design">
+      <HintPath>lib\ComponentFactory.Krypton.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>lib\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>lib\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>lib\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>lib\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4">
+      <HintPath>lib\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams">
+      <HintPath>lib\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash">
+      <HintPath>lib\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>lib\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>lib\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>lib\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>lib\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines">
+      <HintPath>lib\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>lib\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>lib\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>lib\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>lib\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdSharp">
+      <HintPath>lib\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionSettings.cs" />
+    <Compile Include="MasaLeadsExtractor\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\DataRepository.cs" />
+    <Compile Include="MasaLeadsExtractor\DataEntry.cs" />
+    <Compile Include="MasaLeadsExtractor\DataChunk.cs" />
+    <Compile Include="MasaLeadsExtractor\EmailHarvester.cs" />
+    <Compile Include="MasaLeadsExtractor\ExportService.cs" />
+    <Compile Include="MasaLeadsExtractor\LocationData.cs" />
+    <Compile Include="MasaLeadsExtractor\BusinessProfileScraper.cs" />
+    <Compile Include="MasaLeadsExtractor\MapsResultCollector.cs" />
+    <Compile Include="MasaLeadsExtractor\SearchResultCollector.cs" />
+    <Compile Include="MasaLeadsExtractor\DatabaseImporter.cs" />
+    <Compile Include="MasaLeadsExtractor\TextInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\TextInputDialog.Designer.cs">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\LocalizationManager.cs" />
+    <Compile Include="MasaLeadsExtractor\TargetLocation.cs" />
+    <Compile Include="MasaLeadsExtractor\LocationEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\LocationEditorDialog.Designer.cs">
+      <DependentUpon>LocationEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\DarkTheme.cs" />
+    <Compile Include="MasaLeadsExtractor\BrowserAutomator.cs" />
+    <Compile Include="MasaLeadsExtractor\Startup.cs" />
+    <Compile Include="MasaLeadsExtractor\AppConfiguration.cs" />
+    <Compile Include="MasaLeadsExtractor\SettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\SettingsDialog.Designer.cs">
+      <DependentUpon>SettingsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\ExtractionTask.cs" />
+    <Compile Include="MasaLeadsExtractor\CategoriesImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\CategoriesImportDialog.Designer.cs">
+      <DependentUpon>CategoriesImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\LocationsImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\LocationsImportDialog.Designer.cs">
+      <DependentUpon>LocationsImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaLeadsExtractor\WebSearchEngine.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelAppEvents.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelAppEvents_Event.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelApplication.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelDocEvents.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelDocEvents_Event.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelRange.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelSheets.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelWorkbook.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelWorkbookEvents.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelWorkbookEvents_Event.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelWorkbooks.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelWorksheet.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\ExcelSaveAsAccessMode.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\_ExcelApplication.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\_ExcelWorkbook.cs" />
+    <Compile Include="MasaLeadsExtractor\Interop\Excel\_ExcelWorksheet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyConnector.cs" />
+    <Compile Include="SecurityHandler.cs" />
+    <Compile Include="SpreadsheetDocument.cs" />
+    <Compile Include="WebRequester.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MasaLeadsExtractor\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaLeadsExtractor\TextInputDialog.resx">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaLeadsExtractor\LocationEditorDialog.resx">
+      <DependentUpon>LocationEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaLeadsExtractor\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaLeadsExtractor\SettingsDialog.resx">
+      <DependentUpon>SettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaLeadsExtractor\CategoriesImportDialog.resx">
+      <DependentUpon>CategoriesImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaLeadsExtractor\LocationsImportDialog.resx">
+      <DependentUpon>LocationsImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="languages\*.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="MasaLeadsExtractor\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

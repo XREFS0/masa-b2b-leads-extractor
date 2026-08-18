@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Restore
+        run: msbuild MasaB2BExtractor.sln /t:Restore /p:Configuration=Release /nologo /v:m
+
+      - name: Build
+        run: msbuild MasaB2BExtractor.sln /t:Build /p:Configuration=Release /nologo /v:m
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: MasaB2BExtractor
+          path: MasaB2BExtractor\bin\Release\
+          if-no-files-found: error

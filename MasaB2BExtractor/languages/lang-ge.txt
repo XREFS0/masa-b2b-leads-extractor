@@ -1,0 +1,129 @@
+﻿Messages*MÃ¶chten Sie wirklich beenden?*
+Messages*Kein funktionierender kostenloser Proxy-Server verfÃ¼gbar!*
+Messages*MÃ¶chten Sie wirklich {0} Zeilen aus der Liste lÃ¶schen?*
+Messages*MÃ¶chten Sie wirklich alle Zeilen aus der Liste lÃ¶schen?*
+Messages*Proxys insgesamt {0}, geprÃ¼ft {1}, verfÃ¼gbar {2}*
+Messages*Falscher Code oder E-Mail. Bitte erneut versuchen!*
+Messages*Um unbegrenzt Daten zu extrahieren, benÃ¶tigen Sie die Vollversion von MASA B2B Leads Extractor. MÃ¶chten Sie die Vollversion jetzt kaufen?*
+Messages*FÃ¼hren Sie zuerst die gewÃ¼nschte Suche aus und klicken Sie erst dann auf GET DATA, wenn die Ergebnisse auf der Seite erscheinen.*
+Messages*Keine Daten zum Exportieren. FÃ¼hren Sie zuerst die Suche aus und klicken Sie dann auf GET DATA.*
+Messages*Keine Daten fÃ¼r den Export ausgewÃ¤hlt. Treffen Sie zuerst eine Auswahl und klicken Sie dann auf Export.*
+Messages*Verarbeitung abgeschlossen!*
+Messages*Vom Benutzer gestoppt!*
+MainForm*splitContainer*
+MainForm**
+MainForm*webBrowser*
+MainForm*panel2*
+MainForm*btnExport*Exportieren
+MainForm*btnGetData*Daten holen
+MainForm*btnStop*Erfassung stoppen
+MainForm*btnSelectAll*Alle auswÃ¤hlen
+MainForm*btnDeleteAll*Alle lÃ¶schen
+MainForm*btnClearSelection*Auswahl aufheben
+MainForm*btnDeleteSelected*AusgewÃ¤hlte lÃ¶schen
+MainForm**
+MainForm*dgvResults*
+MainForm**
+MainForm**
+MainForm*panel1*
+MainForm*bnWebrowserGo*
+MainForm*tbWebbrowserUrl*
+MainForm*label1*Adresse:
+MainForm*btnWebbrowserStop*
+MainForm*btnWebbrowserRefresh*
+MainForm*btnWebbrowserForward*
+MainForm*btnWebbrowserBack*
+MainForm*btnBrowserHome*
+MainForm*statusStrip*statusStrip1
+MainForm**
+MainForm*menuStrip*menuStrip1
+Menu*fileToolStripMenuItem*Datei
+Menu*exportToolStripMenuItem*Exportieren...
+Menu*exitToolStripMenuItem*Beenden
+Menu*websitesToolStripMenuItem*Websites
+Menu*wwwpaginegialleitToolStripMenuItem*www.paginegialle.it
+Menu*wwwpagejaunesfrToolStripMenuItem*www.pagejaunes.fr
+Menu*wwwpaginasamarillasesToolStripMenuItem*www.paginasamarillas.es
+Menu*wwwgelbenseitendeToolStripMenuItem*www.gelbenseiten.de
+Menu*settingsToolStripMenuItem*Einstellungen
+Menu*helpToolStripMenuItem*Hilfe
+Menu*updateToolStripMenuItem*Update
+Menu*registrationToolStripMenuItem*Registrierung
+Menu*aboutOnlineYellowPagesScraperToolStripMenuItem*Ãœber MASA B2B Leads Extractor
+Menu*buyFullVersionToolStripMenuItem*Vollversion kaufen
+DataGridView*category*Kategorie
+DataGridView*business_name*Firmenname
+DataGridView*address*Adresse
+DataGridView*city*Stadt
+DataGridView*state*Bundesland/Region
+DataGridView*postal_code*Postleitzahl
+DataGridView*country*Land
+DataGridView*phone*Telefon
+DataGridView*fax*Fax
+DataGridView*website*Website
+DataGridView*email*E-Mail
+DataGridView*map_link*Kartenlink
+DataGridView*details_link*Details-Link
+ProxiesForm*lblInfo*Proxys werden gesucht...
+ProxiesForm*dgv*
+ProxiesForm**
+ProxiesForm**
+ProxiesForm*label1*VerfÃ¼gbare Proxy-Server
+RegistrationForm*lblSupportLink*https://t.me/XREFS0
+RegistrationForm*label7*Hinweis: Wenn Sie Probleme mit dem Registrierungscode oder der Software haben, besuchen Sie bitte unsere 
+RegistrationForm*btnFreeTrial*Kostenlose Testversion
+RegistrationForm*btnBuyNow*Jetzt kaufen
+RegistrationForm*btnRegister*Registrieren
+RegistrationForm*tbRegCode*
+RegistrationForm*tbEmail*
+RegistrationForm*label6*Registrierungscode:
+RegistrationForm*label5*Lizenzierte E-Mail:
+RegistrationForm*label4*- Kostenlose Updates fÃ¼r 1 Jahr
+RegistrationForm*label3*- Daten nach Excel / CSV exportieren
+RegistrationForm*label2*Registrieren Sie die Software, um folgende Vorteile zu erhalten:
+RegistrationForm*label1*MASA B2B Leads Extractor
+RegistrationForm*pictureBoxAppIcon*
+SettingsForm*tabControl*
+SettingsForm*tabPage1*Daten
+SettingsForm*cbLanguage*
+SettingsForm*label10*OberflÃ¤chensprache
+SettingsForm*cbExtractEmails*E-Mail von der Website extrahieren (langsamere App)
+SettingsForm*cbCSVEncoding*
+SettingsForm*label5*Kodierung
+SettingsForm*cbCSVDelimiter*
+SettingsForm*label4*Trennzeichen fÃ¼r CSV-Spalten
+SettingsForm*cbExportType*
+SettingsForm*label3*Dateiformat fÃ¼r den Datenexport
+SettingsForm*btnChooseExportFolder*AuswÃ¤hlen
+SettingsForm*tbExportPath*
+SettingsForm*rbAutoExport*Ergebnisse automatisch in einen Ordner exportieren
+SettingsForm*rbManualExport*Ergebnisse manuell exportieren
+SettingsForm*cblExport*
+SettingsForm*label2*Zu exportierende Spalten
+SettingsForm*cblShow*
+SettingsForm*label1*In Ergebnistabelle anzeigen
+SettingsForm*tabPage2*Verbindung
+SettingsForm*tbDelayTo*
+SettingsForm*tbDelayFrom*
+SettingsForm*label12*bis
+SettingsForm*label11*VerzÃ¶gerung von
+SettingsForm*cbRandomDelay*ZufÃ¤llige VerzÃ¶gerung zwischen Anfragen verwenden
+SettingsForm*rbUseVPN*VPN verwenden, um Ihre IP zu verbergen
+SettingsForm*tbProxyAuthPassword*
+SettingsForm*tbProxyAuthUsername*
+SettingsForm*label9*fÃ¼r (Sekunden):
+SettingsForm*label8*Anz. Aufgaben:
+SettingsForm*tbFreeProxiesList*
+SettingsForm*tbRandomProxyList*
+SettingsForm*cbAuthentification*Pause aktivieren alle:
+SettingsForm*tbProxyServerPort*
+SettingsForm*label7*Port:
+SettingsForm*tbProxyServerIP*
+SettingsForm*label6*Proxy-Server-IP:
+SettingsForm*rbFreeProxiesList*Kostenlose Proxy-Listen verwenden (eine Quelle pro Zeile)
+SettingsForm*rbRundomProxyList*ZufÃ¤lligen Proxy aus Liste verwenden (Zeilenformat Server:Port)
+SettingsForm*rbUseSingleProxy*Einzelnen Proxy verwenden
+SettingsForm*rbNoProxy*Keine Proxy-Server verwenden
+SettingsForm*panel*
+SettingsForm*btnCancel*Abbrechen
+SettingsForm*btnOk*OK

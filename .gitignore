@@ -1,0 +1,39 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.pdb
+*.cache
+
+# DLLs are ignored by default, but vendored lib\ assemblies must stay tracked
+*.dll
+!**/lib/
+!**/lib/*.dll
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+
+# Runtime / user data
+db32.dll
+log.txt
+debug_page.html
+post-codes.log
+*.log
+settings.cfg
+AutoExport_*.txt
+
+# Deployment folder (machine-specific)
+ori/
+
+# Misc
+*.swp
+*~
+.DS_Store
